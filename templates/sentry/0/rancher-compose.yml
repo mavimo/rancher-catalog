@@ -1,2 +1,24 @@
+.catalog:
+  name: "Sentry"
+  version: "v0"
+  questions:
+    - variable: "SENTRY_SECRET_KEY"
+      label: "Secret key"
+      description: "Your unique secret key."
+      type: "string"
+      required: true
+    - variable: "PUBLIC_PORT"
+      label: "Public port"
+      description: "Public port to expose sentry."
+      type: "int"
+      default: 9000
+      required: true
+
 sentry-redis:
+  scale: 1
+
+sentry-postgres:
+  scale: 1
+
+sentry:
   scale: 1
