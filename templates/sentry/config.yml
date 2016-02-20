@@ -2,7 +2,7 @@ name: Sentry
 description: |
   Create a new instance of sentry application.
 version: 0
-category: Monitoring
+category: Logging
 maintainer: Marco Vito Moscaritolo <mavimo@gmail.com>
 license: MIT
 projectURL: https://getsentry.com
