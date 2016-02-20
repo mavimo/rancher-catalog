@@ -27,8 +27,8 @@ sentry-celery-beat:
     - sentry-postgres:postgres
     - sentry-redis:redis sentry celery beat
 
-sentry-celery-1:
-  image: sentry-celery-1
+sentry-celery:
+  image: sentry-celery
 
   environment:
     SENTRY_SECRET_KEY: ${SENTRY_SECRET_KEY}

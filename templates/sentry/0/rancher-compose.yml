@@ -1,11 +1,11 @@
 .catalog:
   name: "Sentry"
-  version: "v0"
+  version: "v0.1.0"
   questions:
     - variable: "SENTRY_SECRET_KEY"
       label: "Secret key"
       description: "Your unique secret key."
-      type: "string"
+      type: "password"
       required: true
     - variable: "PUBLIC_PORT"
       label: "Public port"
@@ -21,4 +21,10 @@ sentry-postgres:
   scale: 1
 
 sentry:
+  scale: 1
+
+sentry-celery-beat:
+  scale: 1
+
+sentry-celery:
   scale: 1
