@@ -28,3 +28,6 @@ sentry-celery-beat:
 
 sentry-celery:
   scale: 1
+
+sentry-lb:
+  scale: 1
