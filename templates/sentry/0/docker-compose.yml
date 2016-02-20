@@ -4,8 +4,8 @@ sentry-redis:
 sentry-postgres:
   image: postgres
   environment:
-    POSTGRES_PASSWORD=secret
-    POSTGRES_USER=sentry
+    POSTGRES_PASSWORD: secret
+    POSTGRES_USER: sentry
 
 sentry:
   image: sentry
