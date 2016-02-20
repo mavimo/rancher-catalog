@@ -1,0 +1,2 @@
+sentry-redis:
+  scale: 1

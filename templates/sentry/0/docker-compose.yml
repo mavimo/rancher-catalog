@@ -1,0 +1,2 @@
+sentry-redis:
+  image: redis
