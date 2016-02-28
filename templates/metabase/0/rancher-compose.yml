@@ -12,7 +12,8 @@
       label: "MB_DB_FILE"
       description: "Metabase DB file"
       type: "path"
-      required: false
+      default: "/tmp/metabase.db"
+      required: true
     - variable: "MB_DB_TYPE"
       label: "MB_DB_TYPE"
       description: "MB_DB_TYPE"
