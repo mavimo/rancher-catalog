@@ -56,9 +56,13 @@
     - variable: "GF_DATABASE_TYPE"
       label: "GF_DATABASE_TYPE"
       description: "GF_DATABASE_TYPE"
-      type: "string"
+      type: "enum"
+      options:
+        - "sqlite3"
+        - "mysql"
+        - "postgres"
       default: "sqlite3"
-      required: false
+      required: true
     - variable: "GF_DATABASE_HOST"
       label: "GF_DATABASE_HOST"
       description: "GF_DATABASE_HOST"
