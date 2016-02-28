@@ -1,0 +1,104 @@
+.catalog:
+  name: "Grafana"
+  version: "v0.1.0"
+  questions:
+    - variable: "GF_SERVER_ROOT_URL"
+      label: "GF_SERVER_ROOT_URL"
+      description: "GF_SERVER_ROOT_URL"
+      type: "string"
+      required: false
+    - variable: "GF_SECURITY_ADMIN_USER"
+      label: "GF_SECURITY_ADMIN_USER"
+      description: "GF_SECURITY_ADMIN_USER"
+      type: "string"
+      default: "admin"
+      required: false
+    - variable: "GF_SECURITY_ADMIN_PASSWORD"
+      label: "GF_SECURITY_ADMIN_PASSWORD"
+      description: "GF_SECURITY_ADMIN_PASSWORD"
+      type: "string"
+      default: "password"
+      required: false
+    - variable: "GF_SECURITY_SECRET_KEY"
+      label: "GF_SECURITY_SECRET_KEY"
+      description: "GF_SECURITY_SECRET_KEY"
+      type: "string"
+      required: true
+    - variable: "GF_USERS_ALLOW_SIGN_UP"
+      label: "GF_USERS_ALLOW_SIGN_UP"
+      description: "GF_USERS_ALLOW_SIGN_UP"
+      type: "boolean"
+      default: false
+      required: true
+    - variable: "GF_USERS_ALLOW_ORG_CREATE"
+      label: "GF_USERS_ALLOW_ORG_CREATE"
+      description: "GF_USERS_ALLOW_ORG_CREATE"
+      type: "boolean"
+      default: true
+      required: true
+    - variable: "GF_USERS_AUTO_ASSIGN_ORG"
+      label: "GF_USERS_AUTO_ASSIGN_ORG"
+      description: "GF_USERS_AUTO_ASSIGN_ORG"
+      type: "boolena"
+      default: false
+      required: false
+    - variable: "GF_USERS_AUTO_ASSIGN_ORG_ROLE"
+      label: "GF_USERS_AUTO_ASSIGN_ORG_ROLE"
+      description: "GF_USERS_AUTO_ASSIGN_ORG_ROLE"
+      type: "string"
+      default: "Viewer"
+      required: true
+    - variable: "GF_USERS_LOGIN_HINT"
+      label: "GF_USERS_LOGIN_HINT"
+      description: "GF_USERS_LOGIN_HINT"
+      type: "string"
+      required: false
+    - variable: "GF_DATABASE_TYPE"
+      label: "GF_DATABASE_TYPE"
+      description: "GF_DATABASE_TYPE"
+      type: "string"
+      default: "sqlite3"
+      required: false
+    - variable: "GF_DATABASE_HOST"
+      label: "GF_DATABASE_HOST"
+      description: "GF_DATABASE_HOST"
+      type: "string"
+      default: "127.0.0.1:3306"
+      required: false
+    - variable: "GF_DATABASE_NAME"
+      label: "GF_DATABASE_NAME"
+      description: "GF_DATABASE_NAME"
+      type: "string"
+      default: "grafana"
+      required: false
+    - variable: "GF_DATABASE_USER"
+      label: "GF_DATABASE_USER"
+      description: "GF_DATABASE_USER"
+      type: "string"
+      default: "root"
+      required: false
+    - variable: "GF_DATABASE_PASSWORD"
+      label: "GF_DATABASE_PASSWORD"
+      description: "GF_DATABASE_PASSWORD"
+      type: "password"
+      required: false
+    - variable: "GF_DATABASE_PATH"
+      label: "GF_DATABASE_PATH"
+      description: "GF_DATABASE_PATH"
+      type: "string"
+      default: "grafana.db"
+      required: false
+    - variable: "GF_ANALYTICS_REPORTING_ENABLED"
+      label: "GF_ANALYTICS_REPORTING_ENABLED"
+      description: "GF_ANALYTICS_REPORTING_ENABLED"
+      type: "boolean"
+      default: true
+      required: false
+    - variable: "GF_ANALYTICS_GOOGLE_ANALYTICS_UA_ID"
+      label: "GF_ANALYTICS_GOOGLE_ANALYTICS_UA_ID"
+      description: "GF_ANALYTICS_GOOGLE_ANALYTICS_UA_ID"
+      type: "string"
+      required: false
+
+grafana:
+  scale: 1
