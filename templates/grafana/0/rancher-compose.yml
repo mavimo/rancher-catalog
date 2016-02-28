@@ -39,7 +39,7 @@
     - variable: "GF_USERS_AUTO_ASSIGN_ORG"
       label: "GF_USERS_AUTO_ASSIGN_ORG"
       description: "GF_USERS_AUTO_ASSIGN_ORG"
-      type: "boolena"
+      type: "boolen"
       default: false
       required: false
     - variable: "GF_USERS_AUTO_ASSIGN_ORG_ROLE"
