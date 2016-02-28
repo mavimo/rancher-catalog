@@ -1,4 +1,4 @@
-influxdb:
+grafana:
   image: grafana/grafana
   ports:
     - ${PUBLIC_PORT}:3000
